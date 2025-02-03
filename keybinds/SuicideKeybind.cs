@@ -14,6 +14,7 @@ namespace CustomUtils.keybinds {
         public bool IsChangeable => true;
 
         public string Id => "suicide";
+        public string Label => "Other - Suicide";
 
         public void OnPressed(ReferenceHub player) {
             player.gameConsoleTransmission.SendToClient(SuicideCommand.SuicideCmd(player), "yellow");
